@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='max-w-7xl mx-auto'>
             <div className="navbar">
                 <div className="navbar-start">
                     <a className="text-3xl">Auction<span>Gallery</span></a>
