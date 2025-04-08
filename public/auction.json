@@ -1,0 +1,67 @@
+{
+  "bids": [
+    {
+      "id": "01",
+      "title": "Vintage Leica M3 Camera",
+      "description": "Classic 35mm film camera from the 1950s, revered by collectors.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 18,
+      "image": "https://example.com/images/leica-m3.jpg"
+    },
+    {
+      "id": "02",
+      "title": "1965 Gibson SG Standard Electric Guitar",
+      "description": "Iconic vintage electric guitar with rich rock history.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 25,
+      "image": "https://example.com/images/gibson-sg.jpg"
+    },
+    {
+      "id": "03",
+      "title": "Original Apple Macintosh 128K (1984)",
+      "description": "First-generation Apple Macintosh, a true tech collectible.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 42,
+      "image": "https://example.com/images/macintosh-128k.jpg"
+    },
+    {
+      "id": "04",
+      "title": "Rolex Submariner 16610",
+      "description": "Timeless diving watch from Rolex with automatic movement.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 30,
+      "image": "https://example.com/images/rolex-submariner.jpg"
+    },
+    {
+      "id": "05",
+      "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+      "description": "A literary masterpiece, first print of the classic novel.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 12,
+      "image": "https://example.com/images/great-gatsby.jpg"
+    },
+    {
+      "id": "06",
+      "title": "Mid-Century Modern Eames Lounge Chair",
+      "description": "Designer chair with iconic curves and classic elegance.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 17,
+      "image": "https://example.com/images/eames-chair.jpg"
+    },
+    {
+      "id": "07",
+      "title": "Banksy Original Screen Print",
+      "description": "Rare signed artwork by Banksy, a must-have for collectors.",
+      "currentBidPrice": 2850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 33,
+      "image": "https://example.com/images/banksy-print.jpg"
+    }
+  ]
+}
