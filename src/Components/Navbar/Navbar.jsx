@@ -5,10 +5,10 @@ const Navbar = () => {
         <div className='max-w-7xl mx-auto'>
             <div className="navbar">
                 <div className="navbar-start">
-                    <a className="text-3xl">Auction<span>Gallery</span></a>
+                    <a className="text-3xl text-blue-400">Auction<span className='font-medium text-yellow-500'>Gallery</span></a>
                 </div>
                 <div className="navbar-center">
-                    <ul className='flex gap-5 text-lg'>
+                    <ul className='flex gap-10 text-lg font-medium'>
                         <li><a href="">Home</a></li>
                         <li><a href="">Auctions</a></li>
                         <li><a href="">Category</a></li>
