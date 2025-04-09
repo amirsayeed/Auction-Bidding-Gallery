@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Auction from './Components/Auction/Auction'
 import Banner from './Components/Banner/Banner'
@@ -6,6 +7,17 @@ import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
+  const [favorites, setFavourites] = useState([]);
+
+  const handleAddFavourite = item =>{
+    // handleHide();
+    setFavourites([...favorites,item]);
+  }
+
+  // const handleHide = () =>{
+  //   document.getElementById('no-content').style.display='none';
+  // }
+
   return (
     <div>
       <header>
@@ -13,7 +25,7 @@ function App() {
         <Banner/>
       </header>
       <main>
-        <Auction/>
+        <Auction handleAddFavourite={handleAddFavourite} favorites={favorites}/>
       </main>
       <footer>
         <Footer/>

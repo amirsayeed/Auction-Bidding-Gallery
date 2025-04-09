@@ -1,7 +1,6 @@
 import React from 'react';
 import { GoHeart } from "react-icons/go";
-const Bid = ({bid}) => {
-    console.log(bid)
+const Bid = ({bid, handleAddFavourite}) => {
     const {image,title,currentBidPrice,timeLeft} = bid;
     return (
         <>
@@ -20,7 +19,7 @@ const Bid = ({bid}) => {
                 </td>
                 <td className='font-medium'>${currentBidPrice}</td>
                 <td className='font-medium'>{timeLeft}</td>
-                <td><GoHeart size={20} /></td>
+                <td><button onClick={()=>handleAddFavourite(bid)}><GoHeart size={20} /></button></td>
             </tr>
         </>
     );

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { GoHeart } from "react-icons/go";
 import Bid from '../Bid/Bid';
-const Bids = () => {
+const Bids = ({handleAddFavourite}) => {
     const [bids,setBids] = useState([]);
 
     useEffect(()=>{
@@ -23,7 +22,11 @@ const Bids = () => {
                     </thead>
                     <tbody>
                         {
-                            bids.map(bid=><Bid key={bid.id} bid={bid}/>)
+                            bids.map(bid=>
+                            <Bid key={bid.id} 
+                            bid={bid}
+                            handleAddFavourite={handleAddFavourite}
+                            />)
                         }
                     </tbody>
                 </table>
