@@ -19,7 +19,7 @@ const Bid = ({bid, handleAddFavourite}) => {
                 </td>
                 <td className='font-medium'>${currentBidPrice}</td>
                 <td className='font-medium'>{timeLeft}</td>
-                <td><button onClick={()=>handleAddFavourite(bid)}><GoHeart size={20} /></button></td>
+                <td><button onClick={()=>handleAddFavourite(bid,bid.currentBidPrice)}><GoHeart size={20} /></button></td>
             </tr>
         </>
     );

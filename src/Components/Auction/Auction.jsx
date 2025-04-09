@@ -2,7 +2,7 @@ import React from 'react';
 import Bids from '../Bids/Bids';
 import Favourite from '../Favourite/Favourite';
 
-const Auction = ({handleAddFavourite,favorites}) => {
+const Auction = ({hideContent,handleAddFavourite,favourites,total,handleRemoveFavourite}) => {
 
     return (
         <div className='bg-[#EBF0F5]'>
@@ -14,7 +14,12 @@ const Auction = ({handleAddFavourite,favorites}) => {
                         <Bids handleAddFavourite={handleAddFavourite} />
                     </div>
                     <div className='w-[30%]'>
-                        <Favourite favorites={favorites} />
+                        <Favourite 
+                            hideContent={hideContent} 
+                            favourites={favourites} 
+                            total={total} 
+                            handleRemoveFavourite={handleRemoveFavourite}
+                        />
                     </div>
                 </div>
             </div>
