@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { GoHeart } from "react-icons/go";
+import Bid from '../Bid/Bid';
 const Bids = () => {
     const [bids,setBids] = useState([]);
 
     useEffect(()=>{
         fetch('auction.json')
         .then(res=>res.json())
-        .then(data=>console.log(data.bids))
+        .then(data=>setBids(data.bids))
     },[])
 
     return (
@@ -21,134 +22,9 @@ const Bids = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>
-                        <div className="flex items-center gap-3">
-                            <div className="avatar">
-                            <div className="mask mask-squircle h-12 w-12">
-                                <img
-                                src="https://img.daisyui.com/images/profile/demo/2@94.webp"
-                                alt="Avatar Tailwind CSS Component" />
-                            </div>
-                            </div>
-                            <div>
-                            <div className="font-bold">Hart Hagerty</div>
-                            </div>
-                        </div>
-                        </td>
-                        <td>
-                        Zemlak, Daniel and Leannon
-                        </td>
-                        <td>Purple</td>
-                        <td><GoHeart size={20} /></td>
-                    </tr>
-                
-                    <tr>
-                        <td>
-                        <div className="flex items-center gap-3">
-                            <div className="avatar">
-                            <div className="mask mask-squircle h-12 w-12">
-                                <img
-                                src="https://img.daisyui.com/images/profile/demo/3@94.webp"
-                                alt="Avatar Tailwind CSS Component" />
-                            </div>
-                            </div>
-                            <div>
-                            <div className="font-bold">Brice Swyre</div>
-                            </div>
-                        </div>
-                        </td>
-                        <td>
-                        Carroll Group
-                        </td>
-                        <td>Red</td>
-                        <td><GoHeart size={20} /></td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <div className="flex items-center gap-3">
-                            <div className="avatar">
-                            <div className="mask mask-squircle h-12 w-12">
-                                <img
-                                src="https://img.daisyui.com/images/profile/demo/4@94.webp"
-                                alt="Avatar Tailwind CSS Component" />
-                            </div>
-                            </div>
-                            <div>
-                            <div className="font-bold">Marjy Ferencz</div>
-                            </div>
-                        </div>
-                        </td>
-                        <td>
-                        Rowe-Schoen
-                        </td>
-                        <td>Crimson</td>
-                        <td><GoHeart size={20} /></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                        <div className="flex items-center gap-3">
-                            <div className="avatar">
-                            <div className="mask mask-squircle h-12 w-12">
-                                <img
-                                src="https://img.daisyui.com/images/profile/demo/5@94.webp"
-                                alt="Avatar Tailwind CSS Component" />
-                            </div>
-                            </div>
-                            <div>
-                            <div className="font-bold">Yancy Tear</div>
-                            </div>
-                        </div>
-                        </td>
-                        <td>
-                        Wyman-Ledner
-                        </td>
-                        <td>Indigo</td>
-                        <td><GoHeart size={20} /></td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <div className="flex items-center gap-3">
-                            <div className="avatar">
-                            <div className="mask mask-squircle h-12 w-12">
-                                <img
-                                src="https://img.daisyui.com/images/profile/demo/5@94.webp"
-                                alt="Avatar Tailwind CSS Component" />
-                            </div>
-                            </div>
-                            <div>
-                            <div className="font-bold">Yancy Tear</div>
-                            </div>
-                        </div>
-                        </td>
-                        <td>
-                        Wyman-Ledner
-                        </td>
-                        <td>Indigo</td>
-                        <td><GoHeart size={20} /></td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <div className="flex items-center gap-3">
-                            <div className="avatar">
-                            <div className="mask mask-squircle h-12 w-12">
-                                <img
-                                src="https://img.daisyui.com/images/profile/demo/5@94.webp"
-                                alt="Avatar Tailwind CSS Component" />
-                            </div>
-                            </div>
-                            <div>
-                            <div className="font-bold">Yancy Tear</div>
-                            </div>
-                        </div>
-                        </td>
-                        <td>
-                        Wyman-Ledner
-                        </td>
-                        <td>Indigo</td>
-                        <td><GoHeart size={20} /></td>
-                    </tr>
+                        {
+                            bids.map(bid=><Bid key={bid.id} bid={bid}/>)
+                        }
                     </tbody>
                 </table>
             </div>
