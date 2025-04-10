@@ -11,7 +11,7 @@ function App() {
   const [favourites, setFavourites] = useState([]);
   const [total, setTotal] = useState(0);
   const [hideContent, setHideContent] = useState(true);
-
+  
   const notify = () => toast("🦄 Item Added to your Favourite Lists");
   const notify1 = () => toast.warn("🦄 Item Removed From Favourites!");
 
@@ -31,6 +31,7 @@ function App() {
       setHideContent(true);
     }
     notify1();
+    
   }
 
   const handleTotal = price =>{

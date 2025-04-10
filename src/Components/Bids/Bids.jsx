@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Bid from '../Bid/Bid';
-const Bids = ({handleAddFavourite}) => {
+const Bids = ({handleAddFavourite,favourites}) => {
     const [bids,setBids] = useState([]);
 
     useEffect(()=>{
@@ -10,9 +10,9 @@ const Bids = ({handleAddFavourite}) => {
     },[])
 
     return (
-            <div className="overflow-x-auto bg-[#FFFFFF] rounded-2xl p-3">
+            <div className="overflow-x-auto bg-[#FFFFFF] rounded-2xl p-3 sora">
                 <table className="table">
-                    <thead>
+                    <thead className='text-lg font-medium text-[#000000] pt-4'>
                     <tr>
                         <th>Items</th>
                         <th>Current Bid</th>
@@ -26,6 +26,7 @@ const Bids = ({handleAddFavourite}) => {
                             <Bid key={bid.id} 
                             bid={bid}
                             handleAddFavourite={handleAddFavourite}
+                            favourites={favourites}
                             />)
                         }
                     </tbody>
