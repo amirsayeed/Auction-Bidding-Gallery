@@ -12,7 +12,7 @@ const Footer = () => {
                     <p>Own.</p>
                 </div>
                 <div>
-                    <ul className='poppins flex gap-8 text-lg'>
+                    <ul className='poppins flex flex-col md:flex-row gap-8 text-lg'>
                         <li><a href="">Home</a></li>
                         <li><a href="">Auctions</a></li>
                         <li><a href="">Category</a></li>
