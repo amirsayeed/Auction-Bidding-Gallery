@@ -18,7 +18,7 @@ const Bid = ({bid, handleAddFavourite,favourites}) => {
                 <td>
                     <div className="flex items-center gap-3">
                         <div className="avatar">
-                            <div className="h-16 w-16">
+                            <div className="w-10 h-10 md:h-16 md:w-16">
                                 <img src={image} />
                             </div>
                         </div>

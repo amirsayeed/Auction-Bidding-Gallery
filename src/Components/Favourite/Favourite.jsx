@@ -22,7 +22,7 @@ const Favourite = ({hideContent,favourites,total,handleRemoveFavourite}) => {
                     {
                         favourites.map((favourite,idx) => <div key={idx} className="border-b border-dashed border-gray-300 flex gap-5 items-start justify-between px-2 py-3 text-[#0E2954]">
                                 <div className="avatar">
-                                    <div className='h-16 w-16'>
+                                    <div className='w-10 h-10 md:h-16 md:w-16'>
                                     <img src={favourite.image} alt="" />
                                     </div>
                                 </div>
