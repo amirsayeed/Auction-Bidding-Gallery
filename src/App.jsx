@@ -42,7 +42,7 @@ function App() {
   return (
     <div>
       <header>
-        <Navbar/>
+        <Navbar favourites={favourites}/>
         <Banner/>
       </header>
       <main>
